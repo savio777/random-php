@@ -22,5 +22,36 @@
     ?>
     <b><?php echo("<br>iae kkkkkk<br>") ?></b>    
     <?php echo('<b>iae negrito tbm kkkk</b>') ?>
+
+    <?php echo("<br>");
+        $variavel = 'bem loco';
+        $num = 0;
+        $i = '';  # tipagem fraca
+        if($num == 0){
+            echo('<p>blz</p>');
+        }elseif($num > 0){
+            echo('<p>blz kk</p>');
+        }else{
+            echo('<p>blz kkk</p>');
+        }
+
+        while($num<11){
+            echo($num."\n");
+            $num++;
+        }
+
+        if($num != 0){
+            echo('<br>ta<br>');
+        }else if($variavel != ''){  # else if separado tbm funciona
+            echo('~> ');
+        }
+
+        for($i = $num -1; $i > 0; $i--){
+            echo("$i\n");
+        }
+        
+        # interpolação
+        echo("${variavel}\n{$variavel}")
+    ?>
 </body>
 </html>
