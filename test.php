@@ -37,6 +37,16 @@
 
         while($num<11){
             echo($num."\n");
+            switch($num){
+                case 1:
+                    echo(".\n");
+                    break;
+                case 2:
+                    echo("..\n");
+                    break;
+                default:
+                    echo("...\n");
+            }
             $num++;
         }
 
@@ -49,7 +59,7 @@
         for($i = $num -1; $i > 0; $i--){
             echo("$i\n");
         }
-        
+
         # interpolação
         echo("${variavel}\n{$variavel}")
     ?>
