@@ -72,9 +72,29 @@
         for($i = $num -1; $i > 0; $i--){
             echo("$i<br>");
         }
+        
+        echo('<br>');
+
+        $vetor = array(1,2,3);
+
+        foreach($vetor as $i){
+            echo("$i\n");
+        }
+
+        echo("<b><br><br>");
+
+        $vetor1 = array();
+
+        for($i = 0; $i < 11; $i++){
+            $vetor1[$i] = $i;
+        }
+
+        for($i = 0; $i<=10; $i++){
+            echo($vetor1[$i]);
+        }
 
         # interpolação
-        echo("<br>${variavel}\n{$variavel}")
+        echo("<br><br>${variavel}\n{$variavel}")
     ?>
 </body>
 </html>
