@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        // primeira questão
+        echo('primeira questão<br>');
         for($i = 0; $i < 11; $i++){
             if($i%2 != 0){
                 echo("${i}\n");
@@ -18,7 +18,7 @@
 
         echo('<br><br>');
 
-        // segunda questão
+        echo('segunda questão<br>');
         $num1 = 0;
         $num2 = 1;
         if($num1>$num2){
@@ -31,7 +31,13 @@
 
         echo('<br><br>');
 
-        //terceira questão
+        echo("terceira questão<br>");
+        $array = array(1,2,3,4,5);
+        $num = 0;
+        foreach($array as $i){
+            $num = $num + $i;
+        }
+        echo($num);
         // desenvolver um algoritmo que percorra um array e some todos os números deste array
 
     ?>
