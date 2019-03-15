@@ -39,16 +39,18 @@
             echo($num."\n");
             switch($num){
                 case 1:
-                    echo(".\n");
+                    echo("\num\n");
                     break;
                 case 2:
-                    echo("..\n");
+                    echo("\ndois\n");
                     break;
                 default:
-                    echo("...\n");
+                    echo("\n-\n");
             }
             $num++;
         }
+
+        echo('<br>');
 
         if($num != 0){
             echo('<br>ta<br>');
@@ -56,12 +58,23 @@
             echo('~> ');
         }
 
+        echo('<br>');
+
+        $numero = 0;
+
+        do{
+            echo("${numero}, ");
+            $numero--;
+        }while($numero > -10);
+
+        echo('<br><br>');
+
         for($i = $num -1; $i > 0; $i--){
-            echo("$i\n");
+            echo("$i<br>");
         }
 
         # interpolação
-        echo("${variavel}\n{$variavel}")
+        echo("<br>${variavel}\n{$variavel}")
     ?>
 </body>
 </html>
