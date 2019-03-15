@@ -94,7 +94,58 @@
         }
 
         # interpolação
-        echo("<br><br>${variavel}\n{$variavel}")
+        echo("<br><br>${variavel}\n{$variavel}");
+        echo('<br><br>${variavel}\n{$variavel}');
+
+        echo("<b><br>");
+
+        $booleano = NULL;
+        $booleano = FALSE;
+
+        if($booleano == TRUE){
+            echo("${booleano} verdadeiro<br><br>");
+        }else{
+            echo("${booleano} falso<br><br>");
+        }
+
+        echo((NULL == FALSE) && (0 == NULL)); 
+
+        $teste = 1;
+
+        echo($teste == TRUE);
+
+        // vetor dinamico
+        $vet['oi'] = 'oi kkk';
+        $vet[0] = '0';
+        $vet[1] = 1;
+        $vet['vet'] = array(1, 2, 3);
+        $vet[2] = 6.9;
+        $vet['v'] = TRUE;
+        $vet['f'] = FALSE;
+        $vet['pulo'] = '<br>';
+        $vet['seiLa'] = array('hmm' => 'hmmm', 'hm' => 'hmmmmmm');
+
+        $vet1 = array('ta' => 'taa', 'taa' => 'taaaa');
+
+        echo("<br><br>".$vet['oi'].$vet['pulo'].$vet[0].$vet[1].$vet[2].$vet['v'].$vet['f'].$vet1['ta'].$vet1['taa'].$vet['pulo']);
+        
+        class Test{
+            private $oi = NULL;
+
+            public function escreverOi($oi){
+                $this->$oi = $oi;
+            }
+
+            // consertar
+            public function imprimirOi(){
+                return $this->$oi;
+            }
+        }
+
+        $objeto = new Test;
+        $objeto->escreverOi('oi kkkk');
+        echo($objeto->imprimirOi())
+
     ?>
 </body>
 </html>
