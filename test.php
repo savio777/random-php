@@ -157,21 +157,22 @@
         echo(gettype(true) . PULAR);
         echo(gettype(array(1,2,3)) . PULAR);
         echo(gettype(NULL) . PULAR . PULAR);
-
-        echo(var_dump($_POST));
-        echo(var_dump($_GET));
-
+        
         if($_POST != NULL){
-            echo('nome~> ' . $_POST['nome'] . '<br>');
+            echo(var_dump($_POST) . '<br>');
+            echo('nome~> ' . $_POST['nome'] . ' sobrenome~> ' . $_POST['sobrenome'] . '<br>');
         }else{
             echo('ta blz<br>');
         }
 
         if($_GET != NULL){
-            echo('nome~> ' . $_GET['nome'] . '<br>');
+            echo(var_dump($_GET) . '<br>');
+            echo('nome~> ' . $_GET['nome'] . ' sobrenome~> ' . $_POST['sobrenome'] . '<br>');
         }else{
             echo('ta blz<br>');
         }
+
+
 
     ?>
 </body>

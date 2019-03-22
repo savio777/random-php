@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>test</title>
-    <style>
-        body{
-            text-align: center
-        }
-    </style>
-</head>
-<body>
-    
-    <form method="GET" action="test.php">
-        <input placeholder="nome" id="nomeGet"><br>
-        <input type="submit" value="enviarGet"><br><br>
-    </form>
+<html lang="pt-br">
+    <head>
+        <title> Nosso singelo formulário </title>
+        <meta charset="utf-8">
+        <style>
+            form{
+                text-align: center
+            }
+        </style>
+    </head>
+    <body>
 
-    <form method="POST" action="test.php">
-        <input placeholder="nome" id="nomePost"><br>
-        <input type="submit" value="enviarPost"> <br><br>
-    </form>
+        <form action="test.php" method="GET">
+            nome: <input name="nome"><br>
+            sobrenome: <input name="sobrenome"><br> 
+            <input type="submit" value="enviar"><br><br>
+        </form>
 
-    <!--<a href="test.php">ver</a>-->
+        <form action="test.php" method="POST">
+            nome: <input name="nome"><br>
+            sobrenome: <input name="sobrenome"><br>
+            idade: <input id="idade"><br> <!-- post e get só recebe name --> 
+            <input type="submit" value="enviar">
+        </form>
 
-</body>
+    </body>
 </html>
