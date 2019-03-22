@@ -172,8 +172,6 @@
             echo('ta blz<br>');
         }
 
-
-
     ?>
 </body>
 </html>
