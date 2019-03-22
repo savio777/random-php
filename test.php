@@ -130,21 +130,33 @@
         echo("<br><br>".$vet['oi'].$vet['pulo'].$vet[0].$vet[1].$vet[2].$vet['v'].$vet['f'].$vet1['ta'].$vet1['taa'].$vet['pulo']);
         
         class Test{
+
             private $oi = NULL;
 
             public function escreverOi($oi){
-                $this->$oi = $oi;
+                $this->oi = $oi;
             }
 
             // consertar
             public function imprimirOi(){
-                return $this->$oi;
+                return $this->oi;
             }
         }
 
         $objeto = new Test;
         $objeto->escreverOi('oi kkkk');
-        echo($objeto->imprimirOi())
+        echo($objeto->imprimirOi());
+
+        echo('<br><br>');
+        define('PULAR', '<br>');
+
+        echo(gettype($objeto) . PULAR);
+        echo(gettype('1') . PULAR);
+        echo(gettype(1) . PULAR);
+        echo(gettype(1.1) . PULAR);
+        echo(gettype(true) . PULAR);
+        echo(gettype(array(1,2,3)) . PULAR);
+        echo(gettype(NULL) . PULAR)
 
     ?>
 </body>
