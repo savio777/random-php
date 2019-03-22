@@ -156,7 +156,22 @@
         echo(gettype(1.1) . PULAR);
         echo(gettype(true) . PULAR);
         echo(gettype(array(1,2,3)) . PULAR);
-        echo(gettype(NULL) . PULAR)
+        echo(gettype(NULL) . PULAR . PULAR);
+
+        echo(var_dump($_POST));
+        echo(var_dump($_GET));
+
+        if($_POST != NULL){
+            echo('nome~> ' . $_POST['nome'] . '<br>');
+        }else{
+            echo('ta blz<br>');
+        }
+
+        if($_GET != NULL){
+            echo('nome~> ' . $_GET['nome'] . '<br>');
+        }else{
+            echo('ta blz<br>');
+        }
 
     ?>
 </body>
