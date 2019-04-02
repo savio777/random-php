@@ -1,0 +1,9 @@
+CREATE DATABASE teste;
+
+USE teste;
+
+CREATE TABLE nomes(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL 
+);
