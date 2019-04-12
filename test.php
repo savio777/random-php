@@ -132,7 +132,7 @@
         class Test{
 
             private $oi = NULL;
-
+            
             public function __construct($oi){
                 $this->oi = $oi;
             }
@@ -141,7 +141,6 @@
                 $this->oi = $oi;
             }
 
-            // consertar
             public function imprimirOi(){
                 return $this->oi;
             }
