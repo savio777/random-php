@@ -129,30 +129,43 @@
 
         echo("<br><br>".$vet['oi'].$vet['pulo'].$vet[0].$vet[1].$vet[2].$vet['v'].$vet['f'].$vet1['ta'].$vet1['taa'].$vet['pulo']);
         
+
         class Test{
 
             private $oi = NULL;
-            
-            public function __construct($oi){
+            private $iae = NULL;
+
+            public function __construct($oi, $iae){
                 $this->oi = $oi;
+                $this->iae = $iae;
             }
 
-            public function escreverOi($oi){
-                $this->oi = $oi;
+            public function __get($atributo){
+                return $this->$atributo;
             }
 
-            public function imprimirOi(){
-                return $this->oi;
+            public function __set($atributo, $valor){
+                $this->$atributo = $valor;
             }
+
+            // pesquisar como funciona
+            public function __destruct(){
+                echo('<br>tchau kkkk<br>');
+            }
+
         }
 
-        define('PULAR', '<br>');
+        define('PULAR', '<br>');  
 
         echo('<br>orientação a objetos<br>');
-        $objeto = new Test('oi kkkk');
-        echo($objeto->imprimirOi().PULAR);
-        $objeto->escreverOi('iae kkkk');
-        echo($objeto->imprimirOi().PULAR);
+        $objeto = new Test('oikkkk', 'iaekk');
+        echo($objeto->__get('iae') . PULAR);
+        echo($objeto->__get('oi') . PULAR);
+        $objeto->__set('oi', 'oi kkkkkkkkkk');
+        $objeto->__set('iae', 'iae kkkkkk');
+        var_dump($objeto);
+        $objeto->__destruct();
+        var_dump($objeto);
 
         echo('<br><br>');
 
