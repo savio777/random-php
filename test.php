@@ -133,6 +133,10 @@
 
             private $oi = NULL;
 
+            public function __construct($oi){
+                $this->oi = $oi;
+            }
+
             public function escreverOi($oi){
                 $this->oi = $oi;
             }
@@ -143,12 +147,15 @@
             }
         }
 
-        $objeto = new Test;
-        $objeto->escreverOi('oi kkkk');
-        echo($objeto->imprimirOi());
+        define('PULAR', '<br>');
+
+        echo('<br>orientação a objetos<br>');
+        $objeto = new Test('oi kkkk');
+        echo($objeto->imprimirOi().PULAR);
+        $objeto->escreverOi('iae kkkk');
+        echo($objeto->imprimirOi().PULAR);
 
         echo('<br><br>');
-        define('PULAR', '<br>');
 
         echo(gettype($objeto) . PULAR);
         echo(gettype('1') . PULAR);
