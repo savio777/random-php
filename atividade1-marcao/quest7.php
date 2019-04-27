@@ -1,12 +1,12 @@
 <?php
 
 $num = 6;
-$fatorial = 0;
+$fatorial = $num;
 
 while($num > 1){
-    $fatorial += ($num*$num-1);
-
+    $fatorial = $fatorial * ($num-1);
+    #echo "num~>" . $num . " f~> " . $fatorial."\n";
     $num--;
 }
 
-echo $fatorial . "\n";
+echo "\n" . $fatorial . "\n";
