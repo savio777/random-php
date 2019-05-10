@@ -22,6 +22,9 @@
             background-color: black;
             color: white;
         }
+        form{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
