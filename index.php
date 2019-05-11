@@ -1,7 +1,4 @@
 <?php
 
 // teste de redirecionamento para arquivo teste
-header('Location: site_marcao/main.php');
-//header('Location: atividade.php');
-//header('Location: test.html');
-
+header('Location: atividade3-marcao/');
