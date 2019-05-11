@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- DE OUTRA MANEIRA IA TER QUE FAZER MUITAS GAMBIARRAS, O CERTO É FAZER ISSO COM JAVASCRIPT -->
+
     <?php
         $cor = 'black';
 
