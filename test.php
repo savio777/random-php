@@ -191,6 +191,20 @@
             echo('ta blz<br>');
         }
 
+        // teste com array
+        function capitais(){
+            $capitais[] = 'natal';
+            $capitais[] = 'são luis';
+        
+            return $capitais;
+        }
+        
+        $capitais = capitais();
+        
+        foreach($capitais as $i){
+            echo $i . "\n";
+        }
+
     ?>
 </body>
 </html>
