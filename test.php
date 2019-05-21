@@ -191,6 +191,8 @@
             echo('ta blz<br>');
         }
 
+        echo "<br>";
+
         // teste com array
         function capitais(){
             $capitais[] = 'natal';
@@ -202,7 +204,7 @@
         $capitais = capitais();
         
         foreach($capitais as $i){
-            echo $i . "\n";
+            echo $i . "<br>";
         }
 
     ?>
