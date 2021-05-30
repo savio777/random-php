@@ -13,6 +13,8 @@ $users = $Dashboard->getUsers();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
     <title>Document</title>
 </head>
 
@@ -30,6 +32,16 @@ $users = $Dashboard->getUsers();
                 <td><?php echo ($user['id']) ?></td>
                 <td><?php echo ($user['nome']) ?></td>
                 <td><?php echo ($user['email']) ?></td>
+                <td><a href="seila/editar?id=<?php echo ($user['id']) ?>">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </a></td>
+                <td><a href="seila/excluir?id=<?php echo ($user['id']) ?>">
+                        <span class="material-icons-outlined">
+                            delete
+                        </span>
+                    </a></td>
             </tr>
         <?php } ?>
     </table>
