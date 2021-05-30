@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <title>Nosso singelo formulário</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>GET</h3>
+      <form action="crudTest.php" method="GET">
+        nome: <input name="nome" /><br />
+        sobrenome: <input name="sobrenome" /><br />
+        <input type="submit" value="enviar" /><br /><br />
+      </form>
+      <br />
+
+      <h3>POST</h3>
+      <form action="crudTest.php" method="POST">
+        nome: <input name="nome" /><br />
+        sobrenome: <input name="sobrenome" /><br />
+        idade: <input id="idade" /><br />
+        <!-- post e get só recebe name -->
+        <input type="submit" value="enviar" />
+      </form>
+    </div>
+  </body>
+</html>
